@@ -53,13 +53,13 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         let targetSize = CGSizeMake(collectionViewItemSize.width*scale, collectionViewItemSize.height*scale)
         
         // cache 
-        var options = PHAssetPreviewRequestOptions()
-        options.networkAccessAllowed = true
-        options.requestDegradedResult = true
-        options.requestProgressImages = false
-        options.sliceInterval = 0.03
-        options.range = 1.0
-        PHCachingAssetPreviewManager.sharedCachingManager.startCachingPreviewForAssets(dataSource.assets, targeSize: targetSize, options: options)
+//        var options = PHAssetPreviewRequestOptions()
+//        options.networkAccessAllowed = true
+//        options.requestDegradedResult = true
+//        options.requestProgressImages = false
+//        options.sliceInterval = 0.03
+//        options.range = 1.0
+//        PHCachingAssetPreviewManager.sharedCachingManager.startCachingPreviewForAssets(dataSource.assets, targeSize: targetSize, options: options)
     }
 
     override func didReceiveMemoryWarning() {
